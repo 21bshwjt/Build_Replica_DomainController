@@ -69,10 +69,10 @@ Start-Sleep -Seconds 15
 #Copy IFM to Local Server
 Net use Z: \\$getifmsrv\c$\IFM
 Robocopy Z: C:\IFM /copyall /s
-Start-Sleep -Seconds 15
+Start-Sleep -Seconds 5
 #Intall Prereqs
 Add-WindowsFeature AD-Domain-Services,RSAT-ADDS,RSAT-ADDS-Tools,RSAT-AD-AdminCenter,RSAT-AD-PowerShell,RSAT-DNS-Server,RSAT-ADLDS,SNMP-Service,SNMP-WMI-Provider -Verbose
-Start-Sleep -Seconds 15
+Start-Sleep -Seconds 5
 #Promote Domain Controllers
 Install-ADDSDomainController -CreateDnsDelegation:$false -DatabasePath 'C:\Windows\NTDS' -DomainName $env:USERDNSDOMAIN -InstallDns:$true -LogPath 'C:\Windows\NTDS' -NoGlobalCatalog:$false -SysvolPath 'C:\Windows\SYSVOL' -InstallationMediaPath 'C:\IFM' -NoRebootOnCompletion:$true -Force:$true
 Stop-Transcript
