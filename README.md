@@ -21,6 +21,7 @@ Usecase : Manual DC build is a time taking activity & that will take minimum 4/5
 + 3. Manual reboot is needed after promotion is completed.
 + 4. Addtional log will be created in c:\temp folder.
 + 5. Code tested multiple times in production but still test that Code once before moving to Prod.
++ 6. Tested on On-Prem & Azure Virtual machines successfully.
 ```
 
 ```diff
