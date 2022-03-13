@@ -25,7 +25,7 @@ Usecase : Manual DC build is a time taking activity & that will take minimum 4/5
 ```
 
 ```diff
-- Do not foget to remove the IFM Backup once Domain Controller promotion will be completed.
+- Do not forget to remove the IFM Backup once Domain Controller promotion will be completed.
 ```
 ___________________________________________________________________________________________________________________
 
