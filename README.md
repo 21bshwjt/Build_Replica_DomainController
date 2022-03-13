@@ -4,7 +4,8 @@
   <img width="45" src="https://github.com/21bshwjt/Build_Replica_DomainController/blob/68e1d154cc2110bdb5dbf74418c9ec60b5bc5024/images/adds.png?raw=true">
 </h1>
 
-## Prerequisites
+
+### Prerequisites
 - One existing Domain Controller 
 - WinRM 
 
@@ -17,4 +18,4 @@ Usecase : Manual DC build is a time taking activity & that will take minimum 4/5
 - Do not foget to remove the IFM Backup once Domain Controller promotion will be completed.
 ```
 
-#### https://21bshwjt.github.io/biswajit/
+#### Wiki : https://21bshwjt.github.io/Build_Replica_DomainController/
