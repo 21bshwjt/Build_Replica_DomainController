@@ -1,7 +1,7 @@
 <h1 align="center">
-  <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/0939a847bc7ef3400a4a91c13925549efa46833e/Screenshots/pki.png?raw=true">
+  <img width="45" src="https://github.com/21bshwjt/Build_Replica_DomainController/blob/68e1d154cc2110bdb5dbf74418c9ec60b5bc5024/images/adds.png?raw=true">
   Build Replica DomainController
-  <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/0939a847bc7ef3400a4a91c13925549efa46833e/Screenshots/pki.png?raw=true">
+  <img width="45" src="https://github.com/21bshwjt/Build_Replica_DomainController/blob/68e1d154cc2110bdb5dbf74418c9ec60b5bc5024/images/adds.png?raw=true">
 </h1>
 
 ## Prerequisites
