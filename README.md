@@ -14,7 +14,7 @@ Above code won't take more than 20/25 mins to build a Domain Controller if NTDS.
 Usecase : Manual DC build is a time taking activity & that will take minimum 4/5 hrs. over the network ; this code won't take more than 30 minutes to build a DC; if another DC is present into the same subnet. 
 
 ```diff
-- Do not foget to remove the IFM Backup once Domain controler promotion will be completed.
+- Do not foget to remove the IFM Backup once Domain Controller promotion will be completed.
 ```
 
 #### https://21bshwjt.github.io/biswajit/
