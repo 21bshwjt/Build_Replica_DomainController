@@ -3,6 +3,7 @@
   Build Replica DomainController
   <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/0939a847bc7ef3400a4a91c13925549efa46833e/Screenshots/pki.png?raw=true">
 </h1>
+
 ## Prerequisites
 - One existing Domain Controller 
 - WinRM 
