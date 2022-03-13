@@ -1,5 +1,9 @@
-# Build Replica DomainController
-## Preqs: 
+<h1 align="center">
+  <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/0939a847bc7ef3400a4a91c13925549efa46833e/Screenshots/pki.png?raw=true">
+  Build Replica DomainController
+  <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/0939a847bc7ef3400a4a91c13925549efa46833e/Screenshots/pki.png?raw=true">
+</h1>
+## Prerequisites
 - One existing Domain Controller 
 - WinRM 
 
@@ -7,5 +11,9 @@ Build (DcPromo) a Domain Controller over the network is a pain; mainly when NTDS
 Above code won't take more than 20/25 mins to build a Domain Controller if NTDS.DIT within 10 GB. DSRM password need to provide by Admins.
 
 Usecase : Manual DC build is a time taking activity & that will take minimum 4/5 hrs. over the network ; this code won't take more than 30 minutes to build a DC; if another DC is present into the same subnet. 
+
+```diff
+- Do not foget to remove the IFM Backup.
+```
 
 #### https://21bshwjt.github.io/biswajit/
