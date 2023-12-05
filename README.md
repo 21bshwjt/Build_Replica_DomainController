@@ -9,23 +9,23 @@
 - One existing Domain Controller 
 - WinRM 
 
-Build (DcPromo) a Domain Controller over the network is a pain; mainly when NTDS.DIT size is big. Another one time consuming activity is replacing an existing Domain Controller.
-Above code won't take more than 20/25 mins to build a Domain Controller if NTDS.DIT within 10 GB. DSRM password need to provide by Admins.
+Building (DcPromo) a Domain Controller over the network is a pain; mainly when NTDS.DIT size is big. That is a time-consuming activity in replacing an existing Domain Controller.
+The above code won't take more than 20/25 mins to build a Domain Controller if NTDS.DIT within 10 GB. DSRM password needs to be provided by Admins.
 
-Usecase : Manual DC build is a time taking activity & that will take minimum 4/5 hrs. over the network ; this code won't take more than 30 minutes to build a DC; if another DC is present into the same subnet. 
+**Use case**: Building a Domain Controller manually is a time-consuming process, typically requiring a minimum of 4 to 5 hours over the network. However, the provided code streamlines this task and can construct a domain controller in under 30 minutes, especially if there is another domain controller present in the local network.
 
-### N.B
+### Notes
 ```diff
-# 1. Time can vary on VM & Network performances as well.
-# 2. Sysvol will build automatically after the reboot.
-# 3. Manual reboot is needed after promotion is completed.
-# 4. Addtional log will be created in C:\temp folder.
-# 5. Code tested multiple times in production but still test that Code once before moving to Prod.
-# 6. Tested on On-Prem & Azure Virtual machines successfully.
+# 1. The time required can fluctuate based on the performance of both the VM and the network.
+# 2. Sysvol will automatically reconstruct following a reboot.
+# 3. A manual reboot is needed after the promotion is completed.
+# 4. Additional logs will be created in 'C:\temp' folder.
+# 5. While the code has undergone multiple successful tests in production, it is advisable to independently validate its performance before deploying it to the production environment.
+# 6. Successfully tested on both On-Premises and Azure Virtual machines.
 ```
 
 ```diff
-- Do not forget to remove the IFM Backup once Domain Controller promotion will be completed.
+- Do not forget to remove the IFM Backup once the Domain Controller promotion is completed.
 ```
 ___________________________________________________________________________________________________________________
 
