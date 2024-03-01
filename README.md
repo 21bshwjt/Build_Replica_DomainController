@@ -23,6 +23,26 @@ The above code won't take more than 20/25 mins to build a Domain Controller if N
 # 5. While the code has undergone multiple successful tests in production, it is advisable to independently validate its performance before deploying it to the production environment.
 # 6. Successfully tested on both On-Premises and Azure Virtual machines.
 ```
+### Deploy first DC in your Domain
+```powershell
+#
+# Windows PowerShell script for AD DS Deployment
+#
+
+Import-Module ADDSDeployment
+Install-ADDSForest `
+-CreateDnsDelegation:$false `
+-DatabasePath "C:\Windows\NTDS" `
+-DomainMode "WinThreshold" `
+-DomainName "bshwjt.internal" `
+-DomainNetbiosName "BSHWJT" `
+-ForestMode "WinThreshold" `
+-InstallDns:$true `
+-LogPath "C:\Windows\NTDS" `
+-NoRebootOnCompletion:$false `
+-SysvolPath "C:\Windows\SYSVOL" `
+-Force:$true
+```
 
 ```diff
 - Do not forget to remove the IFM Backup once the Domain Controller promotion is completed.
